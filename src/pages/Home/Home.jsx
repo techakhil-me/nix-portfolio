@@ -3,7 +3,7 @@ import "./Home.css";
 import Button from "../../components/Button/Button";
 import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
-
+import scroll_icon from "../../images/scroll_aicon.gif"
 function Home() {
   return (
     <div className="Home section">
@@ -37,7 +37,7 @@ function Home() {
           SCROLL TO KNOW MORE
           <img
             className="scroll__icon"
-            src={require("../../images/scroll_aicon.gif")}
+            src={scroll_icon}
             draggable="false"
             alt="scroll"
           />
