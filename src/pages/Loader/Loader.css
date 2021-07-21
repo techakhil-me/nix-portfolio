@@ -1,0 +1,20 @@
+.Loader {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index:100;
+}
+
+.loaderCont {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.loader__name {
+  width: fit-content;
+  cursor: pointer;
+}

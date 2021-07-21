@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  z-index: 3;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background: #040407;
+  color: #e1efee;
+  font-family: 'Chakra Petch', sans-serif;
+  overflow: hidden;
+}
+
+.test {
+  outline: 2px solid red;
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+}
+
+.person{
+  position: absolute;
+  height: 100%;
+  right: 0;
+}
+
+.Navigation{
+  right:-262px;
+}
+
+
+.gradient{
+  background: url(https://64.media.tumblr.com/199490e11273b821eb9d4731968db85d/d7bba56ab1eeddb5-53/s400x600/624b05674a4a73ebc40f447d244a7b90eddc57d6.gif);
+  background-size: 80%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 600px)
+{
+body{
+  overflow: hidden;
+}
+.home__action{
+  font-size: 10px;
+}
+}

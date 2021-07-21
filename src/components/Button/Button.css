@@ -1,0 +1,85 @@
+.Button {
+  position: relative;
+  cursor: pointer;
+  width: max-content;
+  height: fit-content;
+  border-radius: 5000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Button__mask {
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 5000px;
+  border: 2px solid #e1efee;
+}
+.Button__mask2 {
+  border-radius: 5000px;
+  background: #e1efee;
+  border: 2px solid #e1efee;
+  color: #272727;
+  position: absolute;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  -webkit-mask: url("https://raw.githubusercontent.com/techakhil-me/cs-ip/master/button_mask.png");
+  mask: url("https://raw.githubusercontent.com/techakhil-me/cs-ip/master/button_mask.png");
+  -webkit-mask-size: 2300% 100%;
+  mask-size: 2300% 100%;
+  -webkit-animation: ani2 0.7s steps(22) forwards;
+  animation: ani2 0.7s steps(22) forwards;
+}
+
+.Button i {
+  margin-left: 10px;
+}
+
+.Button:hover .Button__mask2 {
+  -webkit-animation: ani 1s steps(22) forwards;
+  animation: ani 1s steps(22) forwards;
+}
+
+@-webkit-keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+@-webkit-keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+@keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}

@@ -1,0 +1,39 @@
+.Home {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column; 
+}
+
+.iam {
+  margin-left: 2vw;
+  font-size: clamp(48px, 10vw, 144px);
+  line-height: clamp(48px, 20vw, 144px);
+}
+
+
+.title {
+  font-size: clamp(84px, 20vw, 144px);
+  font-weight: bold;
+  margin-left: 2vw;
+  width: fit-content;
+}
+
+.home__action {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.home__action > .Button {
+  margin-left: 2vw;
+  
+}
+.scroll__text {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+.scroll__icon {
+  margin-left: 5px;
+  height: 40px;
+}
