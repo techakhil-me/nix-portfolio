@@ -7,6 +7,12 @@ import { motion } from "framer-motion";
 function Home() {
   return (
     <div className="Home section">
+      <img
+        className="person"
+        src={require("../../images/person.png")}
+        alt="person"
+        draggable="false"
+      />
       <div className="iam">I am</div>
       <motion.div
         layoutId="main-name"
@@ -31,7 +37,7 @@ function Home() {
           SCROLL TO KNOW MORE
           <img
             className="scroll__icon"
-            src={require("../../assets/scroll_aicon.gif")}
+            src={require("../../images/scroll_aicon.gif")}
             draggable="false"
             alt="scroll"
           />
