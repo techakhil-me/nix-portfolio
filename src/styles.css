@@ -23,11 +23,6 @@ body{
   height: 100vh;
 }
 
-.person{
-  position: absolute;
-  height: 100%;
-  right: 0;
-}
 
 .Navigation{
   right:-262px;

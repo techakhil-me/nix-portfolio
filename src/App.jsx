@@ -1,13 +1,12 @@
-import React, { useState,Suspense } from "react";
+import React, { Suspense } from "react";
 import Home from "./pages/Home/Home";
 import Loader from "./pages/Loader/Loader";
 import Navigation from "./components/Navigation/Navigation";
 import "./styles.css";
 
-import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
+import { AnimateSharedLayout } from "framer-motion";
 
 export default function App() {
-  const [isLoading, setLoading] = useState(true);
 
   const HomePage = React.lazy(() => {
     return new Promise(resolve => {
@@ -17,15 +16,8 @@ export default function App() {
 
   return (
       <AnimateSharedLayout type="crossfade">
-      <Suspense maxDuration={3000} fallback={<Loader setLoading={setLoading} />}>
+      <Suspense maxDuration={3000} fallback={<Loader />}>
       <Navigation />
-            <img
-            onClick={()=>setLoading(true)}
-              className="person"
-              src={require("./assets/person.png")}
-              alt="person"
-              draggable="false"
-            />
             <HomePage />
       </Suspense>
 {/* 
