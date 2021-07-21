@@ -8,7 +8,13 @@ function Home() {
   return (
     <div className="Home section">
       <div className="iam">I am</div>
-      <motion.div layoutId="main-name" transition={{ duration: 1 }} className="name title gradient">NIKHIL</motion.div>
+      <motion.div
+        layoutId="main-name"
+        transition={{ duration: 1 }}
+        className="name title gradient"
+      >
+        NIKHIL
+      </motion.div>
       <div className="typewriter iam">
         <Typewriter
           options={{
